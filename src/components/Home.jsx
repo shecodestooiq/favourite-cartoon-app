@@ -2,6 +2,7 @@ import React, { useState } from "react";
 
 import Footer from "./Footer";
 import CartoonsList from "./CartoonsList";
+import ImageSlider from "./ImageSlider";
 
 function Home() {
   const [query, setQuery] = useState(null);
@@ -18,8 +19,9 @@ function Home() {
 
   return (
     <>
-      <div className="home">
-        <h1>Cartoons app</h1>
+      <ImageSlider />
+
+      <div className="home" style={{ margin: "5% 0" }}>
         <input
           type="text"
           name="search"
@@ -28,6 +30,7 @@ function Home() {
           className="search-input"
         />
         <CartoonsList filterBy={query} />
+        
         <br />
       </div>
       <div className="footer">
