@@ -5,21 +5,29 @@ import { CartoonContext } from "../CartoonProvider";
 function FavoriteCartoonsPage() {
   const { cartoons, setCartoons } = useContext(CartoonContext);
 
-  let favoriteCartoons = cartoons.filter((c) => c.isFavourite === true);
+  const favoriteCartoons = cartoons.filter((c) => c.isFavourite === true);
+
+  const areThereFavorites = favoriteCartoons.length === 0;
 
   return (
     <>
       <h2>Your Favorite Cartoons</h2>
-      <div className="Cards">
-        {favoriteCartoons.map((cartoon, index) => (
-          <CartoonCard
-            index={index}
-            name={cartoon.name}
-            img={cartoon.img}
-            isFavourite={true}
-          />
-        ))}
-      </div>
+      {!areThereFavorites ? (
+        <div className="Cards">
+          {favoriteCartoons.map((cartoon, index) => (
+            <CartoonCard
+              index={index}
+              name={cartoon.name}
+              img={cartoon.img}
+              isFavourite={true}
+            />
+          ))}
+        </div>
+      ) : (
+        <center>
+          <h1>No favourite cartoons yet</h1>
+        </center>
+      )}
     </>
   );
 }
