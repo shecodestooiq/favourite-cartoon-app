@@ -29,8 +29,9 @@ function Home() {
           onChange={(e) => handleSearch(e)}
           className="search-input"
         />
+
         <CartoonsList filterBy={query} />
-        
+
         <br />
       </div>
       <div className="footer">

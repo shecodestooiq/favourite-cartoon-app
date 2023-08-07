@@ -6,7 +6,6 @@ import { CartoonContext } from "../CartoonProvider";
 function CartoonCard(props) {
   const { index, name, img, isFavourite } = props;
   const [clicked, setClicked] = useState(false);
-  // const [isFavourite, setIsFavourite] = useState(false);
 
   const { cartoons, setCartoons } = useContext(CartoonContext);
 
@@ -18,7 +17,6 @@ function CartoonCard(props) {
         ? { ...cartoon, isFavourite: !cartoon.isFavourite }
         : cartoon
     );
-    // setIsFavourite(true);
 
     setCartoons(updatedCartoons);
   };
