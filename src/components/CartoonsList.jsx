@@ -1,8 +1,10 @@
-import React from "react";
-import { cartoons } from "./data";
+import React, { useState, useContext } from "react";
 import CartoonCard from "./CartoonCard";
+import { CartoonContext } from "../CartoonProvider";
 
 function CartoonsList({ filterBy }) {
+  const { cartoons, setCartoons } = useContext(CartoonContext);
+
   return (
     <div className="Cards">
       {filterBy === null ? (
@@ -13,6 +15,7 @@ function CartoonsList({ filterBy }) {
                 name={cartoon.name}
                 img={cartoon.img}
                 index={index}
+                isFavourite={false}
               />
             );
           })}
@@ -28,6 +31,7 @@ function CartoonsList({ filterBy }) {
                 name={cartoon.name}
                 img={cartoon.img}
                 index={index}
+                isFavourite={false}
               />
             ))}
         </>

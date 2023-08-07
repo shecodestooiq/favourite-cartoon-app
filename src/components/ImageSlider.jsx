@@ -7,6 +7,7 @@ import pic2 from "../images/coco-review_mbws.1280.webp";
 import pic3 from "../images/z-cover2.jpeg";
 import pic4 from "../images/soul-c.webp";
 
+
 export default function ImageSlider(props) {
   const [currentIndex, setCurrentIndex] = useState(0);
 

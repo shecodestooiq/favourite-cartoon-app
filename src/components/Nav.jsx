@@ -5,7 +5,7 @@ function Nav() {
   return (
     <nav className="nav">
       <Link to="/" style={{ textDecoration: "none", color: "white" }}>Home</Link>
-      <Link to="/about" style={{ textDecoration: "none", color: "white" }}>About</Link>
+      <Link to="/favorites" style={{ textDecoration: "none", color: "white" }}>Favorites</Link>
     </nav>
   );
 }

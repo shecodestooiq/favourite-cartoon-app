@@ -6,15 +6,13 @@ import img4 from "../images/the-powerpuff-girls.webp";
 import img5 from "../images/soul.jpeg";
 import img6 from "../images/zootopia-2-disney.webp";
 
+const cartoons  = [
+  { name: "Inside out", img: img1, isFavourite: false },
+  { name: "Adventare time", img: img2, isFavourite: false },
+  { name: "Coco", img: img3, isFavourite: false },
+  { name: "The powerfull girls", img: img4, isFavourite: false },
+  { name: "Soul", img: img5, isFavourite: false },
+  { name: "Zokopia", img: img6, isFavourite: false },
+];
 
-
-const cartoons = [
-    { name: "Inside out", img: img1 },
-    { name: "Adventare time", img: img2 },
-    { name: "Coco", img: img3 },
-    { name: "The powerfull girls", img: img4 },
-    { name: "Soul", img: img5 },
-    { name: "Zokopia", img: img6 },
-  ];
-
-export {cartoons};
+export { cartoons };
