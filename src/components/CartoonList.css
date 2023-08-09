@@ -1,0 +1,32 @@
+.container {
+    width: 100vw;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    padding: 2rem;
+    color: rgb(255, 0, 183);
+}
+
+.input {
+    width: 30%;
+    height: 6%;
+    border-radius: 999px;
+    text-align: center;
+    padding: 5px;
+    color: grey;
+    margin: 5px;
+    border: none;
+    background-color: rgb(255, 237, 240);
+}
+
+.btnSearch {
+    width: 20px;
+    position: relative;
+    top: -5%;
+    right: -12%;
+}
