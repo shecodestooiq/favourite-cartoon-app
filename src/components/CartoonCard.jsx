@@ -9,18 +9,7 @@ function CartoonCard(props) {
 
   const { cartoons, setCartoons } = useContext(CartoonContext);
 
-  const handleClick = () => {
-    setClicked(!clicked);
-
-    const updatedCartoons = cartoons.map((cartoon) =>
-      cartoon.name === name
-        ? { ...cartoon, isFavourite: !cartoon.isFavourite }
-        : cartoon
-    );
-
-    setCartoons(updatedCartoons);
-  };
-
+ 
   return (
     <div
       key={index}
