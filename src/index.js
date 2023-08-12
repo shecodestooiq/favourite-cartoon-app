@@ -4,17 +4,13 @@ import "./index.css";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 
-import { CartoonProvider } from "./CartoonProvider";
-
 // import CartoonContext from "./CartoonContext";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
 root.render(
   <React.StrictMode>
-    <CartoonProvider>
       <App />
-    </CartoonProvider>
   </React.StrictMode>
 );
 

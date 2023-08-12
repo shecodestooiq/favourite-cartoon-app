@@ -1,23 +1,22 @@
 import "./App.css";
 import { BrowserRouter } from "react-router-dom";
 import { Route, Routes, Link } from "react-router-dom";
-import React, { useState } from "react";
-import Home from "./components/Home";
-import Nav from "./components/Nav";
-
-import FavoriteCartoonsPage from "./components/FavouritePage";
-// import { AlertContainer, alert } from 'react-custom-alert';
+import React from "react";
+import DoctorSignin from "./components/DoctorSignin";
+import PatientForm from "./components/PatientForm";
+import { PatienDataProvider } from "./providers/PatientDataContext";
 
 function App() {
   return (
+    // <PatienDataProvider>
+      // <h1>sh</h1>
+    // </PatienDataProvider>
+
     <BrowserRouter>
-      <Nav />
-
       <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/favorites" element={<FavoriteCartoonsPage />} />
+        <Route path="/" element={<DoctorSignin />} />
+        <Route path="/patient-form" element={<PatientForm />} />
       </Routes>
-
     </BrowserRouter>
   );
 }
