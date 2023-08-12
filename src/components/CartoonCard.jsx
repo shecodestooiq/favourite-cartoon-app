@@ -6,9 +6,19 @@ import { CartoonContext } from "../CartoonProvider";
 function CartoonCard(props) {
   const { index, name, img, isFavourite } = props;
   const [clicked, setClicked] = useState(false);
-
   const { cartoons, setCartoons } = useContext(CartoonContext);
+  
+  const handleClick = () => {
+    setClicked(!clicked);
 
+    const updatedCartoons = cartoons.map((cartoon) =>
+      cartoon.name === name
+        ? { ...cartoon, isFavourite: !cartoon.isFavourite }
+        : cartoon
+    );
+
+    setCartoons(updatedCartoons);
+  };
 
   return (
     <div
@@ -20,7 +30,7 @@ function CartoonCard(props) {
       <div className="card-info">
         <h3>{name}</h3>
         <img
-          src={clicked || isFavourite ? filledIcon : icon}
+          src={clicked || isFavourite  ? filledIcon : icon}
           alt=""
           className={`icon ${clicked ? "icon-clicked" : ""}`}
           onClick={handleClick}
