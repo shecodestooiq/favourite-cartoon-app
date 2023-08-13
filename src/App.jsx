@@ -4,18 +4,14 @@ import { Route, Routes, Link } from "react-router-dom";
 import React from "react";
 import DoctorSignin from "./components/DoctorSignin";
 import PatientForm from "./components/PatientForm";
-import { PatienDataProvider } from "./providers/PatientDataContext";
 
 function App() {
   return (
-    // <PatienDataProvider>
-      // <h1>sh</h1>
-    // </PatienDataProvider>
 
     <BrowserRouter>
       <Routes>
-        <Route path="/" element={<DoctorSignin />} />
-        <Route path="/patient-form" element={<PatientForm />} />
+        {/* <Route path="/" element={<DoctorSignin />} /> */}
+        <Route path="/" element={<PatientForm />} />
       </Routes>
     </BrowserRouter>
   );

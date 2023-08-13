@@ -10,7 +10,7 @@ export function PatientDataProvider({ children }) {
     phoneNumber: "",
   });
   return (
-    <PatientDataProvider value={patientData}>{children}</PatientDataProvider>
+    <PatientDataProvider value={{patientData}}>{children}</PatientDataProvider>
   );
 }
 

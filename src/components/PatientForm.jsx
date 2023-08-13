@@ -1,8 +1,7 @@
 import React, { useContext } from "react";
 import context from "../providers/PatientDataContext";
 
-import { PatientDataProvider } from "../providers/PatienDataProvider";
-
+import { PatientDataProvider } from "../providers/PatientDataContext";
 
 function PatientForm() {
   const { context } = useContext(context);
