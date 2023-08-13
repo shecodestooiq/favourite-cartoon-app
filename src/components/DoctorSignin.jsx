@@ -13,24 +13,25 @@ function DoctorSignin() {
 
     setTimeout(() => {
       console.log("Form submitted successfully!");
-      navigate("/patient-form"); // Navigate to the "/success" route
-    }, 2000); // Navigate after 2 seconds (for demonstration purposes)
+      navigate("/patient-form"); 
+    }, 2000); 
   };
 
   return (
-    <div>
-      <h1>Signup Form</h1>
-      <form onSubmit={handleSubmit}>
-        <div>
+    <div className="signin-container">
+      <h1>Signup as a Doctor</h1>
+      <form onSubmit={handleSubmit} className="signin-form">
+        <div className="form-group">
           <label>Email:</label>
           <input
             type="email"
             value={email}
             onChange={(e) => setEmail(e.target.value)}
             required
+            className="form-control"
           />
         </div>
-        <div>
+        <div className="form-group">
           <label>Name:</label>
           <input
             type="text"
@@ -39,18 +40,24 @@ function DoctorSignin() {
               setName(e.target.value);
             }}
             required
+            className="form-control"
           />
         </div>
-        <div>
+        <div className="form-group">
           <label>Password:</label>
           <input
             type="password"
             value={password}
             onChange={(e) => setPass(e.target.value)}
             required
+            className="form-control"
           />
         </div>
-        <button type="submit">Sign Up</button>
+        <center>
+          <button type="submit" className="submit-button">
+            Sign Up
+          </button>
+        </center>
       </form>
     </div>
   );

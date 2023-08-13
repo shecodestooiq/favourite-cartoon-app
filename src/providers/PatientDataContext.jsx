@@ -1,6 +1,6 @@
 import React, { createContext, useState } from "react";
 
-const context = createContext();
+const PatientDataContext = createContext();
 
 export function PatientDataProvider({ children }) {
   const [patientData, setPatientData] = useState({
@@ -9,9 +9,14 @@ export function PatientDataProvider({ children }) {
     diseases: "",
     phoneNumber: "",
   });
+  const updatePatientData = (updatedData) => {
+    setPatientData((prevData) => ({ ...prevData, ...updatedData }));
+  };
   return (
-    <PatientDataProvider value={{patientData}}>{children}</PatientDataProvider>
+    <PatientDataContext.Provider value={{ patientData, updatePatientData }}>
+      {children}
+    </PatientDataContext.Provider>
   );
 }
 
-export default context;
+export default PatientDataContext; // Export the context, not the component
