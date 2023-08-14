@@ -2,7 +2,7 @@ import React from 'react'
 import './CartoonCard.css'
 import FavButton from './FavButton';
 
-function CarttonCard(props) {
+function CartoonCard(props) {
   return (
     <div className='card'>
       {props.name}
@@ -11,4 +11,4 @@ function CarttonCard(props) {
   )
 }
 
-export default CarttonCard;
+export default CartoonCard;
