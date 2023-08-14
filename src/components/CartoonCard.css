@@ -1,0 +1,22 @@
+.card {
+    width: 20%;
+    border-radius: 999px;
+    text-align: center;
+    padding: 5px;
+    color: grey;
+    margin: 5px;
+    border-bottom: 2px solid rgb(255, 42, 141);
+    background-color: blanchedalmond;
+    color: rgb(255, 42, 141);
+    display: flex;
+    justify-content: center;
+}
+
+.btnFav {
+    background-color: transparent;
+    outline: none;
+    border: none;
+    position: absolute;
+    right: 41%;
+    cursor: pointer;
+}

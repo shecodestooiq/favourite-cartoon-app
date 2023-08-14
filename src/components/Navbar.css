@@ -1,0 +1,25 @@
+.NavBar {
+    display: flex;
+    gap: 2%;
+    padding-right: 1%;
+    justify-content: flex-end;
+    align-items: center;
+    height: 2.5rem;
+    background-color: rgb(255, 135, 185);
+}
+
+.Section{
+    color: rgb(255, 135, 185);
+    text-decoration: none;
+    font-size: 1.3rem;
+    background-color: rgb(255, 252, 239);
+    width: 10%;
+    text-align: center;
+    border-radius: 99rem;
+    outline: none;
+}
+
+.Section:hover {
+    scale: 1.2;
+    color: rgb(192, 103, 140);
+}
