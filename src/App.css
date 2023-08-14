@@ -1,0 +1,40 @@
+body{
+ 
+
+font-family: 'Roboto', sans-serif;
+}
+.img{ 
+  display: flex;
+  justify-content: center;
+  margin-left: 35px;
+}
+.cartoon{
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  
+}
+li{
+ 
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  list-style: none;
+  background-color: rgb(209, 209, 234);
+ 
+  margin-top: 20px;
+  margin-right: 50px;
+
+}
+
+.buton{
+  margin: 10px;
+  background-color: antiquewhite;
+  border-radius: 10px;
+}
+ .search{
+  border-radius: 10px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+ }
+ 
