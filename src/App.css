@@ -1,0 +1,120 @@
+/* .App {
+  text-align: center;
+} */
+
+.App{
+  /* background-color: rgb(1, 1, 59); */
+  /* 
+background: rgb(2,0,36);
+background: radial-gradient(circle, rgba(2,0,36,1) 15%, rgba(107,9,121,1) 66%, rgba(0,212,255,1) 94%);
+ */  color: white;
+  text-align: center;
+  background: rgb(2,0,36);
+background: radial-gradient(circle, rgba(2,0,36,1) 30%, rgba(107,9,121,0.9529061624649859) 83%);
+}
+
+.navbar {
+  background-color: rgb(19, 0, 22);
+  width: 100%;
+  height: 70px;
+ align-items: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 50px;
+  position: sticky;
+  color: #ffffff;  
+  font-size: 25px;
+}
+
+a:visited{
+  color:  #ffffff;
+}
+
+.cartoon-list{
+  text-align: center;
+}
+
+h1{
+  text-align: center;
+}
+
+.cards{
+
+    display: flex;
+    justify-content: center;
+    text-align:left;
+}
+
+
+.cartoon-card{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 30px;
+  width: 100%;
+}
+
+.cartoon-card img{
+  width: 100%;
+  height: 300px;
+  border-radius: 10px;
+}
+
+.card{
+  flex: 0 auto;
+  width: 18%;
+  transition: all 0.3s ease 0s;
+  padding: 10px;
+  margin: 10px 10px;
+  border-radius: 10px;
+  border: 0.3px rgb(109, 108, 108) solid;
+  
+}
+
+.card:hover{
+  filter: drop-shadow(0px 1px 6px #bfbcbc);
+}
+.card p, button{
+  display: inline;
+  margin: 0;
+}
+.card .cartoon-name{
+  margin-top: 20px;
+  height: 50px;
+}
+.card .fav{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.favText{
+  padding: 6px 15px;
+}
+
+button{
+  padding: 6px 15px;
+  background-color: transparent;
+  color: white;
+  border-radius: 50px;
+  border: 1px rgb(173, 171, 171) solid;
+}
+button:hover{
+  background-color: rgba(57, 150, 237, 0.416);
+}
+
+.footer{
+  width: 100%;
+  height: 50px;
+  padding-left: 0;
+  background-color: rgb(19, 0, 22);
+  position: sticky;
+  font-size: 25px;
+}
+
+input{
+  border-radius: 15px;
+  height:25px;
+  padding-left: 10px;
+}
